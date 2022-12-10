@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="CTEDS2022_D10_PickTheWinner.Views.GamesmenuView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CTEDS2022_D10_PickTheWinner.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="1024" d:DesignWidth="1440">
+    <Grid>
+        <Image Source="/Images/Gramado.jpg" Stretch="Fill"/>
+        <Rectangle Stretch="Fill" Fill="White" Opacity="0.5"/>
+        <!---->
+        <Label Content="MEUS JOGOS" Background="#FF56042C" Foreground="White" Margin="285,274,825,684" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="24" FontFamily="Roboto"/>
+
+        <!---->
+        <Label Content="NOVO JOGO" Background="#FF56042C" Foreground="White" Margin="835,274,275,680" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="24" FontFamily="Roboto"/>
+    </Grid>
+</UserControl>
