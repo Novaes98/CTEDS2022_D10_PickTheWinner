@@ -13,7 +13,12 @@
         <Label Content="MEUS JOGOS" Background="#FF56042C" Foreground="White" Margin="285,274,825,684" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="24" FontFamily="Roboto"/>
 
         <!---->
-        <Label Content="NOVO JOGO" Background="#FF56042C" Foreground="White" Margin="835,274,275,680" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="24" FontFamily="Roboto"/>
-        <TextBox Text="Aqui" TextWrapping="Wrap"  Margin="835,365,275,604" Visibility="{Binding ElementName=txtSearchBox, Path=Text.IsEmpty, Converter={StaticResource MyBoolToVisibilityConverter}}" IsHitTestVisible="False"/>
+        <Label Content="NOVO JOGO" Background="#FF56042C" Foreground="White" Margin="835,274,255,680" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="24" FontFamily="Roboto"/>
+        <TextBox Text="INSIRA O CÓDIGO DO NOVO JOGO..." TextWrapping="Wrap"  Margin="835,390,305,594" Visibility="{Binding ElementName=txtSearchBox, Path=Text.IsEmpty, Converter={StaticResource MyBoolToVisibilityConverter}}" IsHitTestVisible="False" VerticalContentAlignment="Center" FontSize="16" FontFamily="Roboto" Foreground="White">
+            <TextBox.Background>
+                <SolidColorBrush Color="Black" Opacity="0.75"/>
+            </TextBox.Background>
+        </TextBox>
+        <Button Content="OK" HorizontalAlignment="Left" Height="40" Margin="1135,390,0,0" VerticalAlignment="Top" Width="50" FontSize="18" FontFamily="Roboto" Foreground="White" Background="Black"/>
     </Grid>
 </UserControl>
