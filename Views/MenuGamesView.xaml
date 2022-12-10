@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="CTEDS2022_D10_PickTheWinner.Views.GamesmenuView"
+﻿<UserControl x:Class="CTEDS2022_D10_PickTheWinner.Views.MenuGamesView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -14,5 +14,6 @@
 
         <!---->
         <Label Content="NOVO JOGO" Background="#FF56042C" Foreground="White" Margin="835,274,275,680" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="24" FontFamily="Roboto"/>
+        <TextBox Text="Aqui" TextWrapping="Wrap"  Margin="835,365,275,604" Visibility="{Binding ElementName=txtSearchBox, Path=Text.IsEmpty, Converter={StaticResource MyBoolToVisibilityConverter}}" IsHitTestVisible="False"/>
     </Grid>
 </UserControl>

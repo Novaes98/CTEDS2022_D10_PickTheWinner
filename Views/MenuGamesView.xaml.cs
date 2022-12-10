@@ -18,9 +18,9 @@ namespace CTEDS2022_D10_PickTheWinner.Views
     /// <summary>
     /// Interaction logic for GamesmenuView.xaml
     /// </summary>
-    public partial class GamesmenuView : UserControl
+    public partial class MenuGamesView : UserControl
     {
-        public GamesmenuView()
+        public MenuGamesView()
         {
             InitializeComponent();
         }
