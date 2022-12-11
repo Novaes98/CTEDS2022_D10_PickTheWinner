@@ -33,7 +33,7 @@
                 <SolidColorBrush Color="Black" Opacity="0.55"/>
             </TextBox.Foreground>
         </TextBox>
-        <Button x:Name="BT_Entrar" Content="Entrar" HorizontalAlignment="Left" Height="49" Margin="238,674,0,0" VerticalAlignment="Top" Width="244" Background="#FF56042C" FontFamily="Roboto" FontSize="32" Foreground="White"/>
+        <Button x:Name="BT_Entrar" Content="Entrar" HorizontalAlignment="Left" Height="49" Margin="238,674,0,0" VerticalAlignment="Top" Width="244" Background="#FF56042C" FontFamily="Roboto" FontSize="32" Foreground="White" Command="{Binding NavigateMenuCommand}"/>
         <Button x:Name="BT_EsqueciSenha" Content="Esqueci minha senha" HorizontalAlignment="Left" Height="28" Margin="238,728,0,0" VerticalAlignment="Top" Width="244" FontFamily="Roboto" FontSize="20" Background="{x:Null}" BorderBrush="{x:Null}">
             <Button.Foreground>
                 <SolidColorBrush Color="#FF56042C" Opacity="0.6"/>
