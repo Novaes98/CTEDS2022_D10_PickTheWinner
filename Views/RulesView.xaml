@@ -8,7 +8,7 @@
              d:DesignHeight="768" d:DesignWidth="1366">
     <Grid>
         <Image Source="/Images/Gramado.jpg" Stretch="Fill"/>
-        <Menu x:Name="MenuPrincipal" Margin="0,0,0,718" Background="#FF56042C" >
+        <Menu x:Name="MenuPrincipal" Margin="0,0,0,718" Background="#FF56042C" Height="50" >
             <MenuItem Command="{Binding NavigateGameCommand}" Name="MENU_PARTIDAS" Header="PARTIDAS" Foreground="White" FontSize="32" FontFamily="Roboto" HorizontalContentAlignment="Center" Height="50" Width="185"/>
             <MenuItem Command="{Binding NavigateRankingCommand}" Name="MENU_RANKING" Header="RANKING" Foreground="White" FontSize="32" FontFamily="Roboto" HorizontalContentAlignment="Center" Height="50" Width="185"/>
             <MenuItem Name="MENU_REGRAS" Header="REGRAS" Opacity="0.65" Foreground="White" FontSize="32" FontFamily="Roboto" HorizontalContentAlignment="Center" Height="50" Width="160"/>
@@ -19,7 +19,7 @@
         <Rectangle Stretch="Fill" Fill="White" Opacity="0.6" Margin="178,88,178,78" Width="1010" Height="602"/>
         <!---->
         <TextBox TextWrapping="Wrap" Text="Regras do jogo" Margin="554,103,554,621" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="44" FontSize="30" Width="257" Background="{x:Null}" FontWeight="Bold" BorderBrush="{x:Null}"/>
-        <TextBlock TextWrapping="Wrap" Text="* Cada participante deve selecionar o placar esperado para cada jogo;&#xD;&#xA;* A pontuação é contabilizada de acordo com a tabela de pontuações, e somada até o fim da partida;&#xD;&#xA;* Os vencedores são classificados em ordem decrescente de pontos (do maior para o menor).&#xD;&#xA;* O valor e prêmios são definidos pelo administrador da partida." Margin="342,173,342,270" FontSize="30" FontFamily="Roboto"/>
+        <TextBlock TextWrapping="Wrap" Text="* Cada participante deve selecionar o placar esperado para cada partida;&#xA;* A pontuação é contabilizada de acordo com a tabela de pontuações, e somada até o fim da competição(copa do mundo 2022).&#xA;* Os vencedores são classificados em ordem decrescente de pontos (do maior para o menor).&#xA;* O valor e prêmios são definidos pelo administrador da bolão." Margin="342,173,342,270" FontSize="30" FontFamily="Roboto"/>
 
         <!---->
         <TextBox TextWrapping="Wrap" Text="TABELA DE PONTUAÇÃO" Background="#FF56042C" Margin="342,509,342,221" Foreground="White" Width="682" FontFamily="Roboto" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Height="38"/>
