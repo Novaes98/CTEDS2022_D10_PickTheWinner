@@ -17,6 +17,9 @@
         </Menu>
         <TextBlock x:Name="Nome_do_Jogo" TextWrapping="Wrap" Text="CTEDS QATAR 2022" FontSize="24" Foreground="#FFFEC310" Margin="905,-1,10,718" FlowDirection="RightToLeft"/>
         <Rectangle Stretch="Fill" Fill="White" Opacity="0.5" Margin="178,126,178,126"/>
+        <Image Margin="534,172,534,464" Source="/Images/House.jpg" Stretch="Fill"/>
+        <Image Margin="770,413,298,223" Source="/Images/ShakingHands.jpg" Stretch="Fill"/>
+        <Image Margin="236,413,832,223" Source="/Images/Whistle.jpg" Stretch="Fill" RenderTransformOrigin="0.715,0.498"/>
 
     </Grid>
 </UserControl>

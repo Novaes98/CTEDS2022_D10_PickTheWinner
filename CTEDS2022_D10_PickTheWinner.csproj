@@ -9,12 +9,19 @@
 
   <ItemGroup>
     <None Remove="Images\BolaDaCopa2022.jpg" />
+    <None Remove="Images\CasaJardinsSP.jpg" />
     <None Remove="Images\Gramado.jpg" />
+    <None Remove="Images\House.jpg" />
+    <None Remove="Images\ShakingHands.jpg" />
+    <None Remove="Images\Whistle.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Images\BolaDaCopa2022.jpg" />
     <Resource Include="Images\Gramado.jpg" />
+    <Resource Include="Images\House.jpg" />
+    <Resource Include="Images\ShakingHands.jpg" />
+    <Resource Include="Images\Whistle.jpg" />
   </ItemGroup>
 
 </Project>
