@@ -16,7 +16,19 @@
             <MenuItem Command="{Binding NavigatePerfilCommand}" Name="MENU_PERFIL" Header="PERFIL" Foreground="White" FontSize="32" FontFamily="Roboto" HorizontalContentAlignment="Center" Height="50"/>
         </Menu>
         <TextBlock x:Name="Nome_do_Jogo" TextWrapping="Wrap" Text="CTEDS QATAR 2022" FontSize="24" Foreground="#FFFEC310" Margin="905,-1,10,718" FlowDirection="RightToLeft"/>
-        <Rectangle Stretch="Fill" Fill="White" Opacity="0.5" Margin="178,126,178,126"/>
+        <Rectangle Stretch="Fill" Fill="White" Opacity="0.6" Margin="178,88,178,78" Width="1010" Height="602"/>
+        <!---->
+        <TextBox TextWrapping="Wrap" Text="Regras do jogo" Margin="554,103,554,621" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="44" FontSize="30" Width="257" Background="{x:Null}" FontWeight="Bold" BorderBrush="{x:Null}"/>
+        <TextBlock TextWrapping="Wrap" Text="* Cada participante deve selecionar o placar esperado para cada jogo;&#xD;&#xA;* A pontuação é contabilizada de acordo com a tabela de pontuações, e somada até o fim da partida;&#xD;&#xA;* Os vencedores são classificados em ordem decrescente de pontos (do maior para o menor).&#xD;&#xA;* O valor e prêmios são definidos pelo administrador da partida." Margin="342,173,342,270" FontSize="30" FontFamily="Roboto"/>
+
+        <!---->
+        <TextBox TextWrapping="Wrap" Text="TABELA DE PONTUAÇÃO" Background="#FF56042C" Margin="342,509,342,221" Foreground="White" Width="682" FontFamily="Roboto" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Height="38"/>
+        <TextBox TextWrapping="Wrap" Text="ACERTOU O PLACAR DA PARTIDA" Background="#FFD9D9D9" Margin="342,547,342,183" Foreground="Black" Width="682" FontFamily="Roboto" VerticalContentAlignment="Center" FontSize="24" Height="38"/>
+        <TextBox TextWrapping="Wrap" Text="ACERTOU VENCEDOR DA PARTIDA" Background="#FFD9D9D9" Margin="342,585,342,145" Foreground="Black" Width="682" FontFamily="Roboto" VerticalContentAlignment="Center" FontSize="24" Height="38"/>
+        <TextBox TextWrapping="Wrap" Text="ERROU O PLACAR E O VENCEDOR" Background="#FFD9D9D9" Margin="342,623,342,107" Foreground="Black" Width="682" FontFamily="Roboto" VerticalContentAlignment="Center" FontSize="24" Height="38"/>
+        <TextBox TextWrapping="Wrap" Text="+2" Background="#FFD9D9D9" Margin="985,547,342,183" Foreground="Black" FontFamily="Roboto" VerticalContentAlignment="Center" FontSize="24" Height="38" BorderBrush="{x:Null}" Width="39" HorizontalContentAlignment="Center"/>
+        <TextBox TextWrapping="Wrap" Text="+1" Background="#FFD9D9D9" Margin="985,585,342,145" Foreground="Black" FontFamily="Roboto" VerticalContentAlignment="Center" FontSize="24" Height="38" BorderBrush="{x:Null}" Width="39" HorizontalContentAlignment="Center"/>
+        <TextBox TextWrapping="Wrap" Text="0" Background="#FFD9D9D9" Margin="985,623,342,107" Foreground="Black" FontFamily="Roboto" VerticalContentAlignment="Center" FontSize="24" Height="38" BorderBrush="{x:Null}" Width="39" HorizontalContentAlignment="Center"/>
 
     </Grid>
 </UserControl>
