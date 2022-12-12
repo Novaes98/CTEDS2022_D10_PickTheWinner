@@ -5,20 +5,19 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:CTEDS2022_D10_PickTheWinner.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="1024" d:DesignWidth="1440">
+             d:DesignHeight="768" d:DesignWidth="1366">
     <Grid>
         <Image Source="/Images/Gramado.jpg" Stretch="Fill"/>
-        <Rectangle  Fill="White" Opacity="0.5" Margin="222,244,272,244"/>
-        <Menu x:Name="MenuPrincipal" Margin="0,0,0,974" Background="#FF56042C" >
-            <MenuItem Name="MENU_PARTIDAS" Header="PARTIDAS" Foreground="White" FontSize="32" FontFamily="Roboto" HorizontalContentAlignment="Center" Height="50" Width="185"/>
+        <Menu x:Name="MenuPrincipal" Margin="0,0,0,718" Background="#FF56042C" >
+            <MenuItem Command="{Binding NavigateGameCommand}" Name="MENU_PARTIDAS" Header="PARTIDAS" Foreground="White" FontSize="32" FontFamily="Roboto" HorizontalContentAlignment="Center" Height="50" Width="185"/>
             <MenuItem Name="MENU_RANKING" Header="RANKING" Opacity="0.65" Foreground="White" FontSize="32" FontFamily="Roboto" HorizontalContentAlignment="Center" Height="50" Width="185"/>
-            <MenuItem Name="MENU_REGRAS" Header="REGRAS" Foreground="White" FontSize="32" FontFamily="Roboto" HorizontalContentAlignment="Center" Height="50" Width="160"/>
-            <MenuItem Name="MENU_PREMIOS" Header="PRÊMIOS" Foreground="White" FontSize="32" FontFamily="Roboto" HorizontalContentAlignment="Center" Height="50" Width="185"/>
-            <MenuItem Name="MENU_PERFIL" Header="PERFIL" Foreground="White" FontSize="32" FontFamily="Roboto" HorizontalContentAlignment="Center" Height="50"/>
+            <MenuItem Command="{Binding NavigateRulesCommand}" Name="MENU_REGRAS" Header="REGRAS" Foreground="White" FontSize="32" FontFamily="Roboto" HorizontalContentAlignment="Center" Height="50" Width="160"/>
+            <MenuItem Command="{Binding NavigateRewardsCommand}" Name="MENU_PREMIOS" Header="PRÊMIOS" Foreground="White" FontSize="32" FontFamily="Roboto" HorizontalContentAlignment="Center" Height="50" Width="185"/>
+            <MenuItem Command="{Binding NavigatePerfilCommand}" Name="MENU_PERFIL" Header="PERFIL" Foreground="White" FontSize="32" FontFamily="Roboto" HorizontalContentAlignment="Center" Height="50"/>
         </Menu>
-        <TextBlock x:Name="Nome_do_Jogo" TextWrapping="Wrap" Text="CTEDS QATAR 2022" FontSize="24" Foreground="#FFFEC310" Margin="905,-1,10,990" FlowDirection="RightToLeft"/>
+        <TextBlock x:Name="Nome_do_Jogo" TextWrapping="Wrap" Text="CTEDS QATAR 2022" FontSize="24" Foreground="#FFFEC310" Margin="905,-1,10,718" FlowDirection="RightToLeft"/>
 
         <!---->
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="222,244,222,244" Background="{x:Null}" FontFamily="Roboto" FontSize="24" />
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="214,211,214,211" Background="white" FontFamily="Roboto" FontSize="24" />
     </Grid>
 </UserControl>

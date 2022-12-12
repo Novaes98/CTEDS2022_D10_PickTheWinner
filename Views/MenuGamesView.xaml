@@ -5,22 +5,22 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:CTEDS2022_D10_PickTheWinner.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="1024" d:DesignWidth="1440">
+             d:DesignHeight="768" d:DesignWidth="1366">
     <Grid>
         <Image Source="/Images/Gramado.jpg" Stretch="Fill"/>
-        <Rectangle Stretch="Fill" Fill="White" Opacity="0.5"/>
+        <Rectangle Stretch="Fill" Fill="White" Opacity="0.5" Margin="0,2,0,-2"/>
         <!---->
-        <Label Content="MEUS JOGOS" Background="#FF56042C" Foreground="White" Margin="285,274,825,684" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="24" FontFamily="Roboto" Width="330" Height="66"/>
+        <Label Content="MEUS JOGOS" Background="#FF56042C" Foreground="White" Margin="285,214,751,488" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="24" FontFamily="Roboto" Width="330" Height="66"/>
 
-        <ComboBox HorizontalAlignment="Stretch" Margin="285,392,875,596" VerticalAlignment="Stretch" RenderTransformOrigin="-0.042,-0.455" Background="Black" Opacity="0.75" Style="{StaticResource {x:Static ToolBar.ComboBoxStyleKey}}" Width="280" Height="36"/>
-        <Button Content="OK" Margin="1135,390,255,594" FontSize="18" FontFamily="Roboto" Foreground="White" Background="Black" Width="50" Height="40"/>
+        <ComboBox HorizontalAlignment="Stretch" Margin="285,344,801,384" VerticalAlignment="Stretch" RenderTransformOrigin="-0.042,-0.455" Background="Black" Opacity="0.75" Style="{StaticResource {x:Static ToolBar.ComboBoxStyleKey}}" Width="280" Height="40"/>
+        <Button Content="OK" Margin="1135,344,181,384" FontSize="18" FontFamily="Roboto" Foreground="White" Background="Black" Width="50" Height="40"/>
         <!---->
-        <Label Content="NOVO JOGO" Background="#FF56042C" Foreground="White" Margin="835,274,255,680" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="24" FontFamily="Roboto" Width="350" Height="66"/>
-        <TextBox Text="INSIRA O CÓDIGO DO NOVO JOGO..." TextWrapping="Wrap"  Margin="835,390,305,594" IsHitTestVisible="False" VerticalContentAlignment="Center" FontSize="16" FontFamily="Roboto" Foreground="White" Height="40" Width="300">
+        <Label Content="NOVO JOGO" Background="#FF56042C" Foreground="White" Margin="835,214,181,488" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="24" FontFamily="Roboto" Width="350" Height="66"/>
+        <TextBox Text="INSIRA O CÓDIGO DO NOVO JOGO..." TextWrapping="Wrap"  Margin="835,344,231,384" IsHitTestVisible="False" VerticalContentAlignment="Center" FontSize="16" FontFamily="Roboto" Foreground="White" Height="40" Width="300">
             <TextBox.Background>
                 <SolidColorBrush Color="Black" Opacity="0.75"/>
             </TextBox.Background>
         </TextBox>
-        <Button Content="OK" Margin="565,390,825,594" FontSize="18" FontFamily="Roboto" Foreground="White" Background="Black" Width="50" Height="40"/>
+        <Button Content="OK" Margin="565,344,751,384" FontSize="18" FontFamily="Roboto" Foreground="White" Background="Black" Width="50" Height="40"/>
     </Grid>
 </UserControl>
