@@ -5,42 +5,43 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:CTEDS2022_D10_PickTheWinner.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="1024" d:DesignWidth="1440">
+             d:DesignHeight="500" d:DesignWidth="900">
     <Grid>
         <Image Source="/Images/BolaDaCopa2022.jpg" Stretch="Fill"/>
-        <TextBlock x:Name="TextBlock_fundoOpaco" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Center" Opacity="10" MinWidth="720" MinHeight="1050" Height="1110" >
-            <TextBlock.Background>
-                <SolidColorBrush Color="White" Opacity="0.8"/>
-            </TextBlock.Background>
-        </TextBlock>
-        <TextBox x:Name="TBox_Usuario_Label" Height="40" Margin="147,336,0,0" Width="426" FontFamily="Roboto" FontSize="32" TextAlignment="Justify" HorizontalAlignment="Left" VerticalContentAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" Text="Usuário" BorderBrush="{x:Null}">
+        <Rectangle Stretch="Fill" Fill="White" Opacity="0.5" Width="450" Height="500" HorizontalAlignment="Left"/>
+       
+        <!---->
+        <Button x:Name="BT_Login" Content="ENTRAR" HorizontalAlignment="Center" Height="49" VerticalAlignment="Center" Width="142" FontFamily="Roboto" FontSize="32" Foreground="#FF56042C" BorderBrush="{x:Null}" Background="{x:Null}" Margin="0,0,600,300"/>
+        <Button x:Name="BT_Cadastro" Content="CADASTRAR" HorizontalAlignment="Center" Height="49" VerticalAlignment="Center" Width="200" FontFamily="Roboto" FontSize="32" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}" Command="{Binding NavigateRegisterCommand}" Margin="0,0,250,300"/>
+
+        <TextBox x:Name="TBox_Usuario_Label" Height="40" Width="426" FontFamily="Roboto" FontSize="32" TextAlignment="Justify" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Background="{x:Null}" Text="Usuário" BorderBrush="{x:Null}" Margin="0,0,300,170">
             <TextBox.Foreground>
                 <SolidColorBrush Color="Black" Opacity="0.55"/>
             </TextBox.Foreground>
         </TextBox>
-        <TextBox x:Name="TBox_Usuario" Height="50" Margin="147,376,0,0" Width="426" Background="WhiteSmoke" FontFamily="Roboto" FontSize="32" TextAlignment="Justify" HorizontalAlignment="Left" VerticalContentAlignment="Center" VerticalAlignment="Top">
+        <TextBox x:Name="TBox_Usuario" Height="50" Width="300" Background="WhiteSmoke" FontFamily="Roboto" FontSize="32" TextAlignment="Justify" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Margin="0,0,419,80">
             <TextBox.Foreground>
                 <SolidColorBrush Color="Black" Opacity="0.55"/>
             </TextBox.Foreground>
         </TextBox>
-        <TextBox x:Name="TBox_Senha_Label" Height="40" Margin="147,472,0,0" Width="426" FontFamily="Roboto" FontSize="32" TextAlignment="Justify" HorizontalAlignment="Left" VerticalContentAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" Text="Senha" BorderBrush="{x:Null}">
+        <TextBox x:Name="TBox_Senha_Label" Height="40" Width="426" FontFamily="Roboto" FontSize="32" TextAlignment="Justify" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Background="{x:Null}" Text="Senha" BorderBrush="{x:Null}" Margin="0,30,300,0">
             <TextBox.Foreground>
                 <SolidColorBrush Color="Black" Opacity="0.55"/>
             </TextBox.Foreground>
         </TextBox>
-        <TextBox x:Name="TBox_Senha" Height="50" Margin="147,512,0,0" Width="426" Background="WhiteSmoke" FontFamily="Roboto" FontSize="32" TextAlignment="Justify" HorizontalAlignment="Left" VerticalContentAlignment="Center" VerticalAlignment="Top">
+        <TextBox x:Name="TBox_Senha" Height="50" Width="300" Background="WhiteSmoke" FontFamily="Roboto" FontSize="32" TextAlignment="Justify" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Margin="0,118,419,0">
             <TextBox.Foreground>
                 <SolidColorBrush Color="Black" Opacity="0.55"/>
             </TextBox.Foreground>
         </TextBox>
-        <Button x:Name="BT_Entrar" Content="Entrar" HorizontalAlignment="Left" Height="49" Margin="238,674,0,0" VerticalAlignment="Top" Width="244" Background="#FF56042C" FontFamily="Roboto" FontSize="32" Foreground="White" Command="{Binding NavigateMenuCommand}"/>
-        <Button x:Name="BT_EsqueciSenha" Content="Esqueci minha senha" HorizontalAlignment="Left" Height="28" Margin="238,728,0,0" VerticalAlignment="Top" Width="244" FontFamily="Roboto" FontSize="20" Background="{x:Null}" BorderBrush="{x:Null}">
+        
+        <!---->
+        <Button x:Name="BT_Entrar" Content="Entrar" HorizontalAlignment="Center" Height="49" VerticalAlignment="Center" Width="244" Background="#FF56042C" FontFamily="Roboto" FontSize="32" Foreground="White" Command="{Binding NavigateMenuCommand}" Margin="0,280,400,0"/>
+        <Button x:Name="BT_EsqueciSenha" Content="Esqueci minha senha" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="244" FontFamily="Roboto" FontSize="20" Background="{x:Null}" BorderBrush="{x:Null}" Margin="0,360,400,0">
             <Button.Foreground>
                 <SolidColorBrush Color="#FF56042C" Opacity="0.6"/>
             </Button.Foreground>
         </Button>
-        <Button x:Name="BT_Login" Content="ENTRAR" HorizontalAlignment="Left" Height="49" Margin="185,218,0,0" VerticalAlignment="Top" Width="142" FontFamily="Roboto" FontSize="32" Foreground="#FF56042C" BorderBrush="{x:Null}" Background="{x:Null}"/>
-        <Button x:Name="BT_Cadastro" Content="CADASTRAR" HorizontalAlignment="Left" Height="49" Margin="373,218,0,0" VerticalAlignment="Top" Width="200" FontFamily="Roboto" FontSize="32" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}" Command="{Binding NavigateRegisterCommand}"/>
 
     </Grid>
 </UserControl>

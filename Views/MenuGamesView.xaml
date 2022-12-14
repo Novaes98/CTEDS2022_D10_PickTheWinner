@@ -5,22 +5,27 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:CTEDS2022_D10_PickTheWinner.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="768" d:DesignWidth="1366">
-    <Grid>
+             d:DesignHeight="500" d:DesignWidth="900">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
         <Image Source="/Images/Gramado.jpg" Stretch="Fill"/>
         <Rectangle Stretch="Fill" Fill="White" Opacity="0.5" Margin="0,2,0,-2"/>
+        
         <!---->
-        <Label Content="MEUS JOGOS" Background="#FF56042C" Foreground="White" Margin="285,214,751,488" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="24" FontFamily="Roboto" Width="330" Height="66"/>
-
-        <ComboBox HorizontalAlignment="Stretch" Margin="285,344,801,384" VerticalAlignment="Stretch" RenderTransformOrigin="-0.042,-0.455" Background="Black" Opacity="0.75" Style="{StaticResource {x:Static ToolBar.ComboBoxStyleKey}}" Width="280" Height="40"/>
-        <Button Content="OK" Margin="1135,344,181,384" FontSize="18" FontFamily="Roboto" Foreground="White" Background="Black" Width="50" Height="40"/>
-        <!---->
-        <Label Content="NOVO JOGO" Background="#FF56042C" Foreground="White" Margin="835,214,181,488" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="24" FontFamily="Roboto" Width="350" Height="66"/>
-        <TextBox Text="INSIRA O CÓDIGO DO NOVO JOGO..." TextWrapping="Wrap"  Margin="835,344,231,384" IsHitTestVisible="False" VerticalContentAlignment="Center" FontSize="16" FontFamily="Roboto" Foreground="White" Height="40" Width="300">
-            <TextBox.Background>
+        <Label Content="MEUS JOGOS" Background="#FF56042C" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" FontFamily="Roboto" Margin="120,130,0,0"></Label>
+        <ComboBox Width="250" Height="40" Margin="120,215,0,0" Foreground="White" Background="Black" Opacity="0.75" Style="{StaticResource {x:Static ToolBar.ComboBoxStyleKey}}" FontFamily="Roboto" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Button x:Name="BT_OK_MEUS_JOGOS" Content="OK" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Roboto" FontSize="20" Foreground="White" Width="50" Height="39.6" Margin="0,0,110,30.3">
+            <Button.Background>
                 <SolidColorBrush Color="Black" Opacity="0.75"/>
-            </TextBox.Background>
-        </TextBox>
-        <Button Content="OK" Margin="565,344,751,384" FontSize="18" FontFamily="Roboto" Foreground="White" Background="Black" Width="50" Height="40"/>
+            </Button.Background>
+        </Button>
+
+        <!---->
+        <Label Content="NOVO JOGO" Background="#FF56042C" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" FontFamily="Roboto" Margin="480,130,0,0"></Label>
+        <TextBox Text="INSIRA O CÓDIGO DO NOVO JOGO..." HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Height="40" Foreground="White" Background="Black" Opacity="0.75" Margin="480,215,0,0" VerticalContentAlignment="Center" FontSize="14" FontFamily="Roboto"/>
+        <Button x:Name="BT_OK_NOVO_JOGO" Content="OK" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Roboto" FontSize="20" Foreground="White" Width="50" Height="40" Margin="610,0,0,30.3">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.75"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </UserControl>
