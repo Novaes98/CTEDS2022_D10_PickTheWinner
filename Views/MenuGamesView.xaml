@@ -9,11 +9,11 @@
     <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
         <Image Source="/Images/Gramado.jpg" Stretch="Fill"/>
         <Rectangle Stretch="Fill" Fill="White" Opacity="0.5" Margin="0,2,0,-2"/>
-        
+
         <!---->
         <Label Content="MEUS JOGOS" Background="#FF56042C" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" FontFamily="Roboto" Margin="120,130,0,0"></Label>
         <ComboBox Width="250" Height="40" Margin="120,215,0,0" Foreground="White" Background="Black" Opacity="0.75" Style="{StaticResource {x:Static ToolBar.ComboBoxStyleKey}}" FontFamily="Roboto" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" />
-        <Button x:Name="BT_OK_MEUS_JOGOS" Content="OK" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Roboto" FontSize="20" Foreground="White" Width="50" Height="39.6" Margin="0,0,110,30.3">
+        <Button x:Name="BT_OK_MEUS_JOGOS" Content="OK" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Roboto" FontSize="20" Foreground="White" Width="50" Height="40" Margin="370,215,0,0">
             <Button.Background>
                 <SolidColorBrush Color="Black" Opacity="0.75"/>
             </Button.Background>
@@ -22,7 +22,7 @@
         <!---->
         <Label Content="NOVO JOGO" Background="#FF56042C" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" FontFamily="Roboto" Margin="480,130,0,0"></Label>
         <TextBox Text="INSIRA O CÓDIGO DO NOVO JOGO..." HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Height="40" Foreground="White" Background="Black" Opacity="0.75" Margin="480,215,0,0" VerticalContentAlignment="Center" FontSize="14" FontFamily="Roboto"/>
-        <Button x:Name="BT_OK_NOVO_JOGO" Content="OK" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Roboto" FontSize="20" Foreground="White" Width="50" Height="40" Margin="610,0,0,30.3">
+        <Button x:Name="BT_OK_NOVO_JOGO" Content="OK" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Roboto" FontSize="20" Foreground="White" Width="50" Height="40" Margin="730,215,0,0">
             <Button.Background>
                 <SolidColorBrush Color="Black" Opacity="0.75"/>
             </Button.Background>

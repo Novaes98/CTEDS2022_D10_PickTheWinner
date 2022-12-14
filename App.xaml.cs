@@ -18,7 +18,7 @@ namespace CTEDS2022_D10_PickTheWinner
         protected override void OnStartup(StartupEventArgs e)
         {
             NavigationStore navigationStore = new NavigationStore();
-            navigationStore.CurrentViewModel = new GameViewModel(navigationStore);
+            navigationStore.CurrentViewModel = new LoginViewModel(navigationStore);
 
             MainWindow = new MainWindow()
             {

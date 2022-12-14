@@ -12,10 +12,13 @@ namespace CTEDS2022_D10_PickTheWinner.ViewModels
     public class RegisterViewModel : ViewModelBase
     {
         public ICommand NavigateLoginCommand { get; }
+        public ICommand NavigateMenuCommand { get; }
+
 
         public RegisterViewModel(NavigationStore navigationStore) 
         {
             NavigateLoginCommand =  new NavigateCommand<LoginViewModel>(navigationStore, () => new LoginViewModel(navigationStore));
+            NavigateMenuCommand = new NavigateCommand<MenuGamesViewModel>(navigationStore, () => new MenuGamesViewModel(navigationStore));
         }
     }
 }
