@@ -16,8 +16,22 @@
             <MenuItem Command="{Binding NavigatePerfilCommand}" Name="MENU_PERFIL" Header="PERFIL" Foreground="White" FontSize="22" FontFamily="Roboto" HorizontalContentAlignment="Center" Height="34" Padding="10,0,6,0"/>
         </Menu>
         <Button x:Name="BT_NomeDoJogo" Content="CTEDS QATAR 2022" HorizontalAlignment="Right" VerticalAlignment="Top" FontFamily="Roboto" Foreground="#FFFEC310" Background="{x:Null}" BorderBrush="{x:Null}"/>
+        <Rectangle Stretch="Fill" Fill="White" Opacity="0.6" Margin="142,62,142,42"/>
+        <Rectangle  Fill="White" Opacity="0.6" Margin="290,130,290,160"/>
+
+        <TextBox TextWrapping="Wrap" Text="Placar atual:" HorizontalContentAlignment="Center" FontSize="30" Width="256" Background="{x:Null}" FontWeight="Bold" BorderBrush="{x:Null}" Height="48" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,130,0,0">
+            <TextBox.Foreground>
+                <SolidColorBrush Color="Black" Opacity="0.85"/>
+            </TextBox.Foreground>
+        </TextBox>
+        <Grid>
+            <TextBox HorizontalAlignment="Center" VerticalAlignment="Center" Text="1º - PrimeiroLugar            80pts" FontSize="20" Background="#FF0078D7" Foreground="White" BorderThickness="1,1,1,100" BorderBrush="{x:Null}" Width="300" Height="130"/>
+            <TextBox HorizontalAlignment="Center" VerticalAlignment="Center" Text="2º - SegundoLugar           78pts" FontSize="20" Background="#FF0078D7" Foreground="White" BorderThickness="1,1,1,100" BorderBrush="{x:Null}" Width="300" Height="130" Margin="0,58,0,0"/>
+            <TextBox HorizontalAlignment="Center" VerticalAlignment="Center" Text="3º - TerceiroLugar             62pts" FontSize="20" Background="#FF0078D7" Foreground="White" BorderThickness="1,1,1,100" BorderBrush="{x:Null}" Width="300" Height="130" Margin="0,116,0,0"/>
+            <TextBox HorizontalAlignment="Center" VerticalAlignment="Center" Text="4º - QuartoLugar              30pts" FontSize="20" Background="#FF969696" Foreground="White" BorderThickness="1,1,1,100" BorderBrush="{x:Null}" Width="300" Height="130" Margin="0,174,0,0"/>
+        </Grid>
 
         <!---->
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="214,211,214,211" Background="white" FontFamily="Roboto" FontSize="24" />
+
     </Grid>
 </UserControl>

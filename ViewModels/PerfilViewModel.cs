@@ -15,6 +15,7 @@ namespace CTEDS2022_D10_PickTheWinner.ViewModels
         public ICommand NavigateRankingCommand { get; }
         public ICommand NavigateRulesCommand { get; }
         public ICommand NavigateRewardsCommand { get; }
+        public ICommand NavigateMenuGamesCommand { get; }
 
         public PerfilViewModel(NavigationStore navigationStore)
         {
@@ -22,7 +23,8 @@ namespace CTEDS2022_D10_PickTheWinner.ViewModels
             NavigateRankingCommand = new NavigateCommand<RankingViewModel>(navigationStore, () => new RankingViewModel(navigationStore));
             NavigateRulesCommand = new NavigateCommand<RulesViewModel>(navigationStore, () => new RulesViewModel(navigationStore));
             NavigateRewardsCommand = new NavigateCommand<RewardsViewModel>(navigationStore, () => new RewardsViewModel(navigationStore));
-            
+            NavigateMenuGamesCommand = new NavigateCommand<MenuGamesViewModel>(navigationStore, () => new MenuGamesViewModel(navigationStore));
+
         }
     }
 }
