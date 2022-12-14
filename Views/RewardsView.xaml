@@ -15,11 +15,22 @@
             <MenuItem Name="MENU_PREMIOS" Header="PRÊMIOS" Opacity="0.65" Foreground="White" FontSize="22" FontFamily="Roboto" HorizontalContentAlignment="Center" Height="32" Width="116" Padding="10,0,6,0"/>
             <MenuItem Command="{Binding NavigatePerfilCommand}" Name="MENU_PERFIL" Header="PERFIL" Foreground="White" FontSize="22" FontFamily="Roboto" HorizontalContentAlignment="Center" Height="34" Padding="10,0,6,0"/>
         </Menu>
-        <TextBlock x:Name="Nome_do_Jogo" TextWrapping="Wrap" Text="CTEDS QATAR 2022" Foreground="#FFFEC310" FlowDirection="RightToLeft" HorizontalAlignment="Right"/>
-        <Rectangle Stretch="Fill" Fill="White" Opacity="0.5" Margin="178,126,178,126"/>
-        <Image Margin="534,172,534,464" Source="/Images/House.jpg" Stretch="Fill"/>
-        <Image Margin="770,413,298,223" Source="/Images/ShakingHands.jpg" Stretch="Fill"/>
-        <Image Margin="236,413,832,223" Source="/Images/Whistle.jpg" Stretch="Fill" RenderTransformOrigin="0.715,0.498"/>
+        <Button x:Name="BT_NomeDoJogo" Content="CTEDS QATAR 2022" HorizontalAlignment="Right" VerticalAlignment="Top" FontFamily="Roboto" Foreground="#FFFEC310" Background="{x:Null}" BorderBrush="{x:Null}"/>
+        <Rectangle Stretch="Fill" Fill="White" Opacity="0.6" Margin="142,62,142,42" Width="616"/>
+        <Image Source="/Images/House.jpg" Width="223" Height="122" Margin="0,0,0,160" />
+        <Image Source="/Images/Whistle.jpg" Width="168" Height="126" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="189,256,0,0" />
+        <Image Source="/Images/ShakingHands.jpg" Width="204" Height="104" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="300,180,0,0" />
 
+        <!---->
+        <TextBox TextWrapping="Wrap" Text="1º Lugar" FontFamily="Roboto" HorizontalContentAlignment="Center" FontSize="20" Width="90" HorizontalAlignment="Center" Background="{x:Null}" FontWeight="Bold" BorderBrush="{x:Null}" Margin="0,65,0,0" Height="25" VerticalAlignment="Top"/>
+        <TextBox TextWrapping="Wrap" Text="Casa mobiliada no Jardins/SP" FontFamily="Roboto" HorizontalContentAlignment="Center" FontSize="14" Background="{x:Null}" BorderBrush="{x:Null}" Width="204" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Margin="0,0,0,13"/>
+
+        <TextBox TextWrapping="Wrap" Text="2º Lugar" FontFamily="Roboto" HorizontalContentAlignment="Center" FontSize="20" Width="166"  Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Background="{x:Null}" FontWeight="Bold" BorderBrush="{x:Null}" Margin="190,229,0,0"/>
+        <TextBox TextWrapping="Wrap" Text="Um apito rosa" FontFamily="Roboto" HorizontalContentAlignment="Center" FontSize="14" Width="105" HorizontalAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" Height="19" VerticalAlignment="Top" Margin="220,385,0,0"/>
+
+        <TextBox TextWrapping="Wrap" Text="3º Lugar" FontFamily="Roboto" HorizontalContentAlignment="Center" FontSize="20" Width="90"  Height="30" Background="{x:Null}" FontWeight="Bold" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.133" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="300,50,0,0"/>
+        <TextBox TextWrapping="Wrap" Text="Aperto de mão do último colocado" FontFamily="Roboto" HorizontalContentAlignment="Center" FontSize="14" Width="166"  Height="20" VerticalAlignment="Center" HorizontalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" Margin="300,315,0,0"/>
+
+        <TextBox TextWrapping="Wrap" Text="*Imagens meramente ilustrativas" FontFamily="Roboto" HorizontalContentAlignment="Center" FontSize="14" Width="221"  Height="20" VerticalAlignment="Center" HorizontalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" Margin="0,440,390,0"/>
     </Grid>
 </UserControl>

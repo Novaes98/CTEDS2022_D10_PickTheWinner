@@ -15,9 +15,27 @@
             <MenuItem Command="{Binding NavigateRewardsCommand}" Name="MENU_PREMIOS" Header="PRÊMIOS" Foreground="White" FontSize="22" FontFamily="Roboto" HorizontalContentAlignment="Center" Height="32" Width="116" Padding="10,0,6,0"/>
             <MenuItem Name="MENU_PERFIL" Header="PERFIL" Opacity="0.65" Foreground="White" FontSize="22" FontFamily="Roboto" HorizontalContentAlignment="Center" Height="34" Padding="10,0,6,0"/>
         </Menu>
-        <TextBlock x:Name="Nome_do_Jogo" TextWrapping="Wrap" Text="CTEDS QATAR 2022" Foreground="#FFFEC310" FlowDirection="RightToLeft" HorizontalAlignment="Right"/>
-        <Rectangle Stretch="Fill" Fill="White" Opacity="0.5" Margin="178,126,178,126"/>
-        <TextBox HorizontalAlignment="Left" Margin="615,270,0,0" TextWrapping="Wrap" Text="Perfil" VerticalAlignment="Top" Width="120" />
+        <Button x:Name="BT_NomeDoJogo" Content="CTEDS QATAR 2022" HorizontalAlignment="Right" VerticalAlignment="Top" FontFamily="Roboto" Foreground="#FFFEC310" Background="{x:Null}" BorderBrush="{x:Null}"/>
+        <Rectangle Stretch="Fill" Fill="White" Opacity="0.6" Margin="142,62,142,42" Width="616" Height="396" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Image Source="/Images/User_Icon.png" Stretch="Fill" Width="182" Height="202" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="199,104,0,0" Cursor="Hand"/>
+
+        <!---->
+        <TextBox TextWrapping="Wrap" Text="Nome do Usuário:" Background="#FF77244D" Foreground="White" FontSize="18" Width="158"  FontFamily="Roboto" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="408,125,0,0" Padding="5,0,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <TextBox TextWrapping="Wrap" Text="Email cadastrado:" Background="#FF77244D" Foreground="White" FontSize="18" Width="158"  FontFamily="Roboto" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="408,195,0,0" Padding="5,0,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <TextBox TextWrapping="Wrap" Text="Seleção favorita:" Background="#FF77244D" Foreground="White" FontSize="18" Width="158"  FontFamily="Roboto" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="408,265,0,0" Padding="5,0,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="TB_Nome" TextWrapping="Wrap" Foreground="White" FontSize="16" Width="170"  FontFamily="Roboto" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="565,125,0,200" Padding="5,0,0,0" VerticalContentAlignment="Center">
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.75"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="TBox_Email" TextWrapping="Wrap" Foreground="White" FontSize="16" Width="170"  FontFamily="Roboto" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="565,195,0,0" Padding="5,0,0,0" VerticalContentAlignment="Center">
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.75"/>
+            </TextBox.Background>
+        </TextBox>
+        <ComboBox Width="170" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" FontSize="16" FontFamily="Roboto" Margin="565,265,0,0">
+            <ComboBoxItem Name="Brasil">BRASIL</ComboBoxItem>
+        </ComboBox>
 
     </Grid>
 </UserControl>

@@ -13,6 +13,7 @@
     <None Remove="Images\Gramado.jpg" />
     <None Remove="Images\House.jpg" />
     <None Remove="Images\ShakingHands.jpg" />
+    <None Remove="Images\User_Icon.png" />
     <None Remove="Images\Whistle.jpg" />
   </ItemGroup>
 
@@ -21,6 +22,7 @@
     <Resource Include="Images\Gramado.jpg" />
     <Resource Include="Images\House.jpg" />
     <Resource Include="Images\ShakingHands.jpg" />
+    <Resource Include="Images\User_Icon.png" />
     <Resource Include="Images\Whistle.jpg" />
   </ItemGroup>
 

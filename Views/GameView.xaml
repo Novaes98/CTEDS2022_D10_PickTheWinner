@@ -15,9 +15,9 @@
             <MenuItem Command="{Binding NavigateRewardsCommand}" Name="MENU_PREMIOS" Header="PRÊMIOS" Foreground="White" FontSize="22" FontFamily="Roboto" HorizontalContentAlignment="Center" Height="32" Width="116" Padding="10,0,6,0"/>
             <MenuItem Command="{Binding NavigatePerfilCommand}" Name="MENU_PERFIL" Header="PERFIL" Foreground="White" FontSize="22" FontFamily="Roboto" HorizontalContentAlignment="Center" Height="34" Padding="10,0,6,0"/>
         </Menu>
-        <TextBlock x:Name="Nome_do_Jogo" TextWrapping="Wrap" Text="CTEDS QATAR 2022" Foreground="#FFFEC310" FlowDirection="RightToLeft" HorizontalAlignment="Right"/>
+        <Button x:Name="BT_NomeDoJogo" Content="CTEDS QATAR 2022" HorizontalAlignment="Right" VerticalAlignment="Top" FontFamily="Roboto" Foreground="#FFFEC310" Background="{x:Null}" BorderBrush="{x:Null}"/>
 
         <!---->
-        <DataGrid d:ItemsSource="{d:SampleData ItemCount=2}" Margin="248,305,248,419"/>
+        
     </Grid>
 </UserControl>

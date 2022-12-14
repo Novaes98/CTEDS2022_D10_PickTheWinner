@@ -24,5 +24,6 @@ namespace CTEDS2022_D10_PickTheWinner.Views
         {
             InitializeComponent();
         }
+
     }
 }
