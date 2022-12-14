@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -23,6 +24,15 @@ namespace CTEDS2022_D10_PickTheWinner.Views
         public LoginView()
         {
             InitializeComponent();
+        }
+
+        //Tentativa de consumo da API... 
+        private async void BT_Entrar_Click(object sender, RoutedEventArgs e)
+        {
+            using(HttpClient client = new HttpClient())
+            {
+                var response = await client.GetAsync("http://localhost:5197/api/User"); 
+            }
         }
     }
 }
